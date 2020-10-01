@@ -1,0 +1,7 @@
+rmdir /s /q "W:\scalafx-examples\scalafx-hello-world\target"
+
+mkdir "W:\scalafx-examples\scalafx-hello-world\target\classes"
+
+"C:\opt\dotty-0.27.0-RC1\bin\dotc.bat" -deprecation -feature -classpath "%LOCALAPPDATA%\Temp\lib\scalafx_2.13-14-R19.jar;C:\opt\\javafx-sdk-14.0.2.1\lib\javafx-swt.jar;C:\\opt\\javafx-sdk-14.0.2.1\lib\javafx.base.jar;C:\opt\javafx-sdk-14.0.2.1\lib\\javafx.controls.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.fxml.jar;C:\\opt\\javafx-sdk-14.0.2.1\lib\javafx.graphics.jar;C:\opt\\javafx-sdk-14.0.2.1\lib\javafx.media.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.swing.jar;C:\opt\javafx-sdk-14.0.2.1\lib\\javafx.web.jar;target\classes" -d "target\classes" src\main\scala\hello\ScalaFXHelloWorld.scala
+
+"C:\opt\dotty-0.27.0-RC1\bin\dotr.bat" -classpath "%LOCALAPPDATA%\Temp\lib\scalafx_2.13-14-R19.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx-swt.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.base.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.controls.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.fxml.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.graphics.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.media.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.swing.jar;C:\opt\javafx-sdk-14.0.2.1\lib\javafx.web.jar;W:\scalafx-examples\scalafx-hello-world\target\classes" hello.ScalaFXHelloWorld

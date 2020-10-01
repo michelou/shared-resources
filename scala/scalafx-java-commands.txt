@@ -1,0 +1,7 @@
+rmdir /s /q "W:\scalafx-examples\scalafx-hello-world\target"
+
+mkdir "W:\scalafx-examples\scalafx-hello-world\target\classes"
+
+"C:\opt\jdk-11.0.8+10\bin\javac.exe" --module-path "C:\opt\\jdk-11.0.8+10\lib;C:\\opt\\javafx-sdk-14.0.2.1\lib" --add-modules=javafx.controls -d "target\classes" src\main\java\hello\JavaFXApplication.java src\main\java\hello\JavaFXHelloWorld.java
+
+"C:\opt\jdk-11.0.8+10\bin\java.exe" --module-path "C:\opt\javafx-sdk-14.0.2.1\lib" --add-modules=javafx.controls -classpath "target\classes" hello.JavaFXHelloWorld
